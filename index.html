@@ -188,9 +188,19 @@
     
     @media screen and (max-width: 480px){
         .y-axis-labels {
-      font-size: 0.6rem;
-      line-height: 1;
-        }
+      position: absolute;
+      top: 8px;
+      left: 0;
+      max-width: 20%;
+      text-align: right;
+      color: rgba(255, 255, 255, 0.863);
+      height: calc(97% - 57px); /* Adjust based on padding */
+      display: flex;
+      flex-wrap: wrap;
+      /* background-color: red; */
+      flex-direction: column;
+      justify-content: space-around;
+    }
         .barmain{
 
       margin-left: 18%;}

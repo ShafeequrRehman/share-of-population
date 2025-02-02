@@ -2,10 +2,40 @@
 <html lang="en">
 <head>
   <style>
+    /* Style for horizontal scrollbar inside iframe */
+::-webkit-scrollbar {
+  width: 5px; /* Width of the vertical scrollbar */
+  height: 5px; /* Height of the horizontal scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #1954ec; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners for the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ADB8E6; /* Darker thumb on hover */
+}
+
+::-webkit-scrollbar-track {
+  background: #70707081; /* Light background for the scrollbar track */
+  border-radius: 10px; /* Rounded corners for the track */
+}
+
+/* Specifically for horizontal scrollbar */
+::-webkit-scrollbar-horizontal {
+  height: 5px; /* Height of horizontal scrollbar */
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent; /* Transparent corner where both scrollbars meet */
+}
     body {
       font-family: Arial, sans-serif;
       background-color:transparent; /* Dark background */
       color: #1d1d25;
+      overflow-x: auto; /* Show horizontal scrollbar if content overflows */
+      overflow-y: hidden;
       margin: 0;
       padding: 0;
     }
